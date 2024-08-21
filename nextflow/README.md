@@ -2,21 +2,17 @@
 
 * [rmatsTurbo.nf](rmatsTurbo.nf) is a Nextflow ([https://www.nextflow.io](https://www.nextflow.io)) implementation of the rMATS workflow with BAM files as input
 
+## Run
 
-## Run with nextflow
+### Locally
 
-> It requires `Java` environment.
-
-### Installation of Nextflow
-* [https://www.nextflow.io/docs/latest/install.html](https://www.nextflow.io/docs/latest/install.html)
-
-###  Run the workflow
-
+* Install: [https://www.nextflow.io/docs/latest/install.html](https://www.nextflow.io/docs/latest/install.html)
+* Edit [nextflow.config](nextflow.config)
+* Run:
 ```bash
 nextflow run rmatsTurbo.nf --config nextflow.config -resume
 ```
 
-### Run on the cloud
-Nextflow was designed to run on the cloud. You can use the `nextflow.config` file to set the parameters for the cloud execution. More details can be found in the Nextflow [documentation](https://www.nextflow.io/docs/latest/aws.html).
+### On the cloud
 
-
+Nextflow can be configured to run on the cloud. More details can be found in the Nextflow [documentation](https://www.nextflow.io/docs/latest/aws.html). Another option is to use [https://seqera.io/platform/](https://seqera.io/platform/). With a compute environment set up in Seqera rMATS can be launched by specifying the pipeline (https://github.com/Xinglab/rmats-turbo) and filling in the parameters
